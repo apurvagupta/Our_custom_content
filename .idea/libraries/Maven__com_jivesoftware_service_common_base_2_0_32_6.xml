@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.jivesoftware.service.common:base:2.0.32.6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jivesoftware/service/common/base/2.0.32.6/base-2.0.32.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jivesoftware/service/common/base/2.0.32.6/base-2.0.32.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jivesoftware/service/common/base/2.0.32.6/base-2.0.32.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

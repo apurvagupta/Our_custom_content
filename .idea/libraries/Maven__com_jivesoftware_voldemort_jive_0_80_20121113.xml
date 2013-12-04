@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.jivesoftware:voldemort-jive:0.80-20121113">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jivesoftware/voldemort-jive/0.80-20121113/voldemort-jive-0.80-20121113.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jivesoftware/voldemort-jive/0.80-20121113/voldemort-jive-0.80-20121113-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jivesoftware/voldemort-jive/0.80-20121113/voldemort-jive-0.80-20121113-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
