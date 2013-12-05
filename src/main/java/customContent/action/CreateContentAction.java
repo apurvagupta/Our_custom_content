@@ -2,58 +2,36 @@ package customContent.action;
 
 import com.jivesoftware.community.JiveContainer;
 import com.jivesoftware.community.action.ContentActionSupport;
-import customContent.CustomContentBean;
-
-import java.util.Date;
 
 public class CreateContentAction extends ContentActionSupport {
 
-    private long topicId;
-    private String title;
-    private String description;
-    private JiveContainer container;
+    private String errorMessage;
+    private String details;
 
     @Override
     public String execute() {
-        CustomContentBean customContentBean = new CustomContentBean();
-        customContentBean.setContainerID(getContainerID());
-        customContentBean.setContainerType(getContainerType());
-        customContentBean.setCreationDate(new Date());
-        customContentBean.setDescription(getDescription());
-        customContentBean.setTitle(getTitle());
-        customContentBean.setId(topicId);
-
+        System.out.println("IN");
+        System.out.println("DETAILS:"+details);
+        errorMessage="";
+        if(details.length()>5){
+            return ERROR;
+        }
+        return SUCCESS;
     }
 
-    public long getTopicId() {
-        return topicId;
+    public String getErrorMessage() {
+        return errorMessage;
     }
 
-    public void setTopicId(long topicId) {
-        this.topicId = topicId;
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
     }
 
-    public String getTitle() {
-        return title;
+    public String getDetails() {
+        return details;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public JiveContainer getContainer() {
-        return container;
-    }
-
-    public void setContainer(JiveContainer container) {
-        this.container = container;
+    public void setDetails(String details) {
+        this.details = details;
     }
 }

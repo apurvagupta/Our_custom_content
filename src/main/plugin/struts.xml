@@ -1,10 +1,13 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
-    <package name="custom_content-actions" extends="community-default">
-        <action name="create_content" class="customContent.action.CreateContentAction">
-            <result name="input" type="freemarker">/plugin/resources/template/edit.ftl</result>
-            <result name="success" type="redirect">/topic/{topicId}</result>
+    <package name="custom-content-actions" extends="community-default">
+        <action name="topic" class="customContent.action.CreateContentAction">
+            <result name="input" type="freemarker">/plugins/custom_content/resources/templates/edit.ftl</result>
+        </action>
+        <action name="submit" class="customContent.action.CreateContentAction">
+            <result name="success" type="freemarker">/plugins/custom_content/resources/templates/edit.ftl</result>
+            <result name="error" type="freemarker">/plugins/custom_content/resources/templates/error.ftl</result>
         </action>
     </package>
 </struts>

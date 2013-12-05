@@ -5,12 +5,15 @@
     <author></author>
     <version>1.0.0</version>
     <minServerVersion>6.0</minServerVersion>
-    <maxServerVersion>6.0</maxServerVersion>
+    <maxServerVersion>6.0.9.9</maxServerVersion>
     
 	<!-- you will want to change your class name here! -->
-    <class>SamplePlugin</class>
+    <!--<class>CustomContentPlugin</class>-->
+    <urlmapping prefix="/topic" class="customContent.CustomContentUrlMapping"/>
+    <urlmapping prefix="/submit" class="customContent.CustomContentUrlMapping"/>
 
-	<!-- 
+
+    <!--
     <authorURL>
     <pluginURL>
     <databaseKey>
@@ -23,6 +26,6 @@
     <macro>
     <urlmapping>
     <sitemesh>
-	-->
+    -->
 
 </plugin>
