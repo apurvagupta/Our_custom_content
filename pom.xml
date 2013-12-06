@@ -219,6 +219,11 @@
             <version>3.0.3.RELEASE</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-json-plugin</artifactId>
+            <version>2.3.15.3</version>
+        </dependency>
 
         <!-- If using <parent> section, remove several deps below can be removed. -->
         <dependency>
@@ -300,6 +305,7 @@
             <version>1.2</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
     <profiles>
         <profile>

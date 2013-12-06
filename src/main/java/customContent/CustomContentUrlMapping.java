@@ -14,11 +14,15 @@ public class CustomContentUrlMapping implements URLMapping {
             method="input";
             name="topic";
         }
+        else if(uri.equals("/topic/json")){
+            name   = "customJsonRequest";
+        }
+
         else
             name="submit";
-            mapping.setName(name);
-            mapping.setMethod(method);
-            mapping.setNamespace("custom-content-actions");
+        mapping.setName(name);
+        mapping.setMethod(method);
+        mapping.setNamespace("custom-content-actions");
     }
 
 }

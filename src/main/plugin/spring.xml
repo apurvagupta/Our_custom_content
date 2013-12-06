@@ -8,18 +8,19 @@
        default-autowire="no" default-init-method="init" default-destroy-method="destroy">
 
     <bean id="custom-content-plugin" class="customContent.CustomContentPlugin"/>
+
     <bean id="custom-content-link" class="customContent.CustomContentLink" scope="prototype">
         <property name="ID" value="custom-content"/>
         <property name="nameKey" value="Topic"/>
         <property name="linkCss" value="j-globalNavLink j-ui-elem"/>
     </bean>
+
     <bean id="custom-content-navBarLinks" class="com.jivesoftware.community.util.spring.MergeableCollection" scope="prototype" parent="navBarLinks" >
         <property name="source">
             <util:list value-type="com.jivesoftware.community.web.component.ActionLink" scope="prototype">
                 <ref bean ="custom-content-link"/>
             </util:list>
         </property>
-
     </bean>
 
 

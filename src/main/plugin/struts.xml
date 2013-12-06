@@ -2,11 +2,23 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
     <package name="custom-content-actions" extends="community-default">
+        <result-types>
+            <result-type name="json" class="com.googlecode.jsonplugin.JSONResult"></result-type>
+        </result-types>
         <action name="topic" class="customContent.action.CreateContentAction">
             <result name="input" type="freemarker">/plugins/custom_content/resources/templates/edit.ftl</result>
         </action>
         <action name="submit" class="customContent.action.CreateContentAction">
             <result name="success" type="freemarker">/plugins/custom_content/resources/templates/edit.ftl</result>
+            <result name="error" type="freemarker">/plugins/custom_content/resources/templates/error.ftl</result>
+        </action>
+
+        <action name="customJsonRequest" class="customContent.action.CreateJsonAction">
+            <result type="json" name="success">
+                <param name="noCache">true</param>
+                <param name="excludeNullProperties">true</param>
+                <param name="root">jsonString</param>
+            </result>
             <result name="error" type="freemarker">/plugins/custom_content/resources/templates/error.ftl</result>
         </action>
     </package>

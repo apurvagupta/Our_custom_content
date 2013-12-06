@@ -10,6 +10,7 @@
 	<!-- you will want to change your class name here! -->
     <!--<class>CustomContentPlugin</class>-->
     <urlmapping prefix="/topic" class="customContent.CustomContentUrlMapping"/>
+    <urlmapping prefix="/topic/*" class="customContent.CustomContentUrlMapping"/>
     <urlmapping prefix="/submit" class="customContent.CustomContentUrlMapping"/>
 
 

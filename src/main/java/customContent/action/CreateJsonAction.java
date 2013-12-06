@@ -3,7 +3,7 @@ package customContent.action;
 import com.google.gson.Gson;
 import com.jivesoftware.community.action.ContentActionSupport;
 
-public class CreateContentAction extends ContentActionSupport {
+public class CreateJsonAction extends ContentActionSupport {
 
     private String errorMessage;
     private String details;
@@ -11,14 +11,15 @@ public class CreateContentAction extends ContentActionSupport {
 
     @Override
     public String execute() {
-        System.out.println("IN");
+        System.out.println("IN JSON");
         System.out.println("DETAILS:"+details);
         Gson gson = new Gson();
-        jsonString = gson.toJson(details);
         errorMessage="";
         if(details.length()>5){
+            jsonString=gson.toJson("{hasError:true}");
             return ERROR;
         }
+        jsonString = gson.toJson("{details:"+details+"}");
         return SUCCESS;
     }
 
