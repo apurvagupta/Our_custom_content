@@ -23,5 +23,10 @@
         </property>
     </bean>
 
+    <bean id="customContentDataBase" class="customContent.CustomContentDataBase">
+        <property name="dataSource">
+            <util:property-path path="dataSourceFactory.dataSource" />
+        </property>
+    </bean>
 
 </beans>

@@ -4,6 +4,8 @@
     <description>custom_content</description>
     <author></author>
     <version>1.0.0</version>
+    <databaseKey>custom_content</databaseKey>
+    <databaseVersion>1</databaseVersion>
     <minServerVersion>6.0</minServerVersion>
     <maxServerVersion>6.0.9.9</maxServerVersion>
     

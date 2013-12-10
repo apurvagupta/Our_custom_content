@@ -1,2 +1,7 @@
 <schema name="custom_content">
+    <table name="topic" description="topic schema">
+        <column name ="name" type="varchar" nullable="true" description="Topic name"/>
+        <column name ="UserID" type="varchar" nullable="true" description="user who created the content" />
+        <column name ="Id" type = "varchar" nullable="true"  description="primary key"/>
+    </table>
 </schema>
